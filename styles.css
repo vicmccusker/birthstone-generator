@@ -37,8 +37,8 @@ body {
   
 
   .main-content {
+
 	width: 352px;
-	max-width: 352px;
 	height: 556px;
 	border-radius: 0.5rem;
 	position: absolute;
@@ -65,7 +65,7 @@ body {
 	font-weight: 100;
 	font-size: 122px;
 
-  }
+}
 
   h2 {
 
@@ -201,17 +201,11 @@ body {
 	margin-bottom: 20px;
 
   }
-
-
-  img {
-	float: right;
-  }
-
   .gem {
 
 	display: flex;
 	position: absolute;
-  	bottom: 0;
+  	bottom: 2px;
   	right: 0;
 	padding-bottom: 20px;
 	padding-right: 20px;
@@ -223,9 +217,6 @@ body {
 	padding-right: 20px;
 	width: 60px;
 	height: auto;
-	float: right;
-
-	
 
   }
 
