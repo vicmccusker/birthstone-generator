@@ -1,0 +1,570 @@
+* {
+	margin: 0;
+	padding: 0;
+
+  }
+
+@font-face {
+    
+    src: url(fonts/rubik-variablefont_wght-webfont.woff) format('woff'),
+         url(fonts/rubik-variablefont_wght-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+	font-family: 'rubik';
+}
+
+@font-face{
+	src: url(fonts/Anza-FreePersonalUseOnly) format('opentype'),
+	url(fonts/anza-freepersonaluseonly-webfont.woff) format('woff'),
+	url(fonts/anza-freepersonaluseonly-webfont.woff2) format('woff2');
+	font-weight: normal;
+    font-style: normal;
+	font-family: 'anza';
+	}
+
+
+body {
+	margin: 0;
+	background-color: #d4cccb;
+	
+  }
+  
+  .content-width {
+	max-width: 70ch;
+	width: calc(100% - 4rem);
+	margin: 0 auto;
+  }
+  
+
+  .main-content {
+	width: 352px;
+	max-width: 352px;
+	height: 556px;
+	border-radius: 0.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #85A2A4;
+	color: #B9F0FC;
+	text-transform: uppercase;
+	line-height: 0.5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+
+  }
+
+  h1 {
+
+	font-family: 'anza';
+	font-weight: 100;
+	font-size: 122px;
+
+  }
+
+  h2 {
+
+	font-family: 'anza';
+	font-weight: 100;
+	font-size: 78px;
+
+  }
+
+  h3 {
+
+	font-family: 'anza';
+	font-weight: 100;
+	font-size: 122px;
+
+
+  }
+
+  p {
+
+	font-family: 'rubik';
+  }
+
+
+
+  .main-content p {
+
+	padding-top: 100px;
+	padding-left: 30px;
+	font-family: 'rubik';
+	padding-right: 30px;
+	align-items: left;
+	font-size: 30px;
+
+  }
+	
+  .main-content h1 {
+
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 50px;
+	font-size: 128px;
+	font-family: 'anza';
+	font-weight: 100;
+	color: #FFFFFF;
+
+  }
+  
+
+  form {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	margin-top: 20px;
+	padding: 7px 7px 7px 7px;
+	text-align: left;
+	color: #85A2A4;
+	border: none;
+	border-radius: 20px;
+	margin: 0 auto;
+	width: 70%;
+
+  }
+  
+  select {
+	font-size: 10px;
+	padding: 10px 5px 10px 5px;
+	text-align: left;
+	color: #85A2A4;
+	border: none;
+	border-radius: 20px;
+	margin: 0 auto;
+	width: 70%;
+
+  }
+
+  
+  .button {
+
+	border: solid 1px rgb(255, 255, 255);
+	color: white;
+	background-color: transparent;
+	font-family: arial; 
+	align-content: center;
+	width: 70px;
+	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 30px;
+	border-radius: 50px;
+  }
+
+  .button:hover {
+
+	color: #85A2A4;
+	background-color: #FFFFFF;
+
+  }
+
+  
+
+ .back-button {
+
+	display: flex;
+ 	justify-content: flex-end;
+	background-color:transparent;
+	color: white;
+	font-family: 'rubik';
+	border: 0px;
+	font-size: 20px;
+	margin-left: 50px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	
+
+  }
+  
+  .back-button-dark {
+
+	display: flex;
+ 	justify-content: flex-end;
+	background-color:transparent;
+	color: rgb(44, 44, 44);
+	font-family: 'rubik';
+	border: 0px;
+	font-size: 20px;
+	margin-left: 50px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+
+  }
+
+
+  img {
+	float: right;
+  }
+
+  .gem {
+
+	display: flex;
+	position: absolute;
+  	bottom: 0;
+  	right: 0;
+	padding-bottom: 20px;
+	padding-right: 20px;
+ 	justify-content: flex-end;
+	background-color:transparent;
+	border: #FCB9B9;
+	float: right;
+	margin-bottom: 10px;
+	padding-right: 20px;
+	width: 60px;
+	height: auto;
+	float: right;
+
+	
+
+  }
+
+  .modal {
+
+	margin: 0;
+	background-color: #d4cccb;
+
+  }
+  
+
+  #january-content, #february-content, #march-content, #april-content, #may-content, #june-content, #july-content, #august-content, #september-content, #october-content, #november-content, #december-content {
+
+	width: 352px;
+	max-width: 352px;
+	height: 556px;
+	border-radius: 0.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-left: 20px;
+	padding-right: 20px;
+	position: fixed;
+
+
+  }
+
+  	#january-content {
+
+	background: #882323;
+
+  }
+
+		#january-content h2 {
+	color: #FCB9B9;
+	text-transform: uppercase;
+	line-height: 0.5;
+
+
+		}
+
+
+	#january-content h3 {
+	color: #D63939;
+	text-transform: none;
+	line-height: 1;
+	
+
+	}
+
+	#january-content p {
+		color: #FCB9B9;
+		line-height: 1.5;
+		text-transform: none;
+	}
+
+
+	#february-content {
+		background: #50246C;
+
+	}
+
+	#february-content h2 {
+			color: #EBD2FB;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+	#february-content h3 {
+			color: #A14BD7;
+			line-height: 1;
+			padding-bottom: 10px;
+		
+			}
+		
+	#february-content p {
+				color: #FFFFFF;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+
+	#march-content {
+		background: #D6FCFE;
+	
+		}
+
+		#march-content h2 {
+			color: #A0D7DA;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#march-content h3 {
+			color: #77BFC3;
+			line-height: 1;
+			padding-bottom: 10px;
+		
+			}
+		
+		#march-content p {
+				color: #4A7F82;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+
+		#april-content {
+			background: #bebaba;
+	
+		}
+
+		#april-content h2 {
+			color: #797878;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#april-content h3 {
+			color: #5B5D5D;
+			line-height: 1;
+		
+			}
+		
+		#april-content p {
+				color: #5B5D5D;
+				line-height: 1.5;
+				text-transform: none;
+		}
+
+		#may-content {
+			background: #014A01;
+	
+		}
+
+		#may-content h2 {
+			color: #D0F4D0;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#may-content h3 {
+			color: #5FE45F;
+
+			line-height: 1;
+		
+			}
+		
+		#may-content p {
+				color: #D0F4D0;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+		
+		#june-content {
+			background: #C0A8B6;
+	
+		}
+
+		#june-content h2 {
+			color: #978590;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#june-content h3 {
+			color: #dec9d6;
+			line-height: 1;
+		
+			}
+		
+		#june-content p {
+			color: #73626c;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+		
+		#july-content {
+			background: #AA0103;
+	
+		}
+
+		#july-content h2 {
+			color: #FDD0D0;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#july-content h3 {
+			color: #F73A3D;
+			line-height: 1;
+			padding-bottom: 10px;
+		
+			}
+		
+		#july-content p {
+				color: #FFFFFF;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+
+		#august-content {
+			background: #9CD35A;
+		}
+
+		#august-content h2 {
+			color: #E0FEBC;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#august-content h3 {
+			color: #56772F;
+			line-height: 1;
+		
+			}
+		
+		#august-content p {
+				color: #ffffff;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+
+		#september-content {
+			background: #06035e;
+	
+		}
+
+
+		#september-content h2 {
+			color: #cbd1f6;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#september-content h3 {
+			color: #7E81CD;
+			line-height: 1;
+			padding-bottom: 10px;
+		
+			}
+		
+		#september-content p {
+				color: #FFFFFF;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+
+		#october-content {
+			background: #AAC5C2;
+	
+		}
+
+		#october-content h2 {
+
+			color: #70827F;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#october-content h3 {
+			color: #415452;
+			line-height: 1;
+			padding-bottom: 10px;
+		
+			}
+		
+		#october-content p {
+				color: #ffffff;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+
+		#november-content {
+			background: #F4CC00;
+	
+		}
+
+		#november-content h2 {
+
+			color: #FEEB8B;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#november-content h3 {
+			color: #AB9004;
+			line-height: 1;
+		
+			}
+		
+		#november-content p {
+				color: #FFFFFF;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+
+		#december-content {
+			background: #057D92;
+	
+		}
+
+		#december-content h2 {
+
+			color: #ffffff;
+			text-transform: uppercase;
+			line-height: 0.5;
+		
+		}
+		
+		#december-content h3 {
+			color: #01D5DC;
+			line-height: 1;
+			padding-bottom: 10px;
+		
+			}
+		
+		#december-content p {
+				color: #FFFFFF;
+				line-height: 1.5;
+				text-transform: none;
+		
+		}
+
